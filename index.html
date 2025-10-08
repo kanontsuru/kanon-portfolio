@@ -5,27 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kanon Tsuru — Verification Portfolio</title>
   <style>
-    :root{--bg:#0b0d10;--fg:#e8eef3;--muted:#a6b3be;--accent:#5cc8ff;--card:#12161b;--line:#1f2630}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--fg);background:linear-gradient(180deg,#0b0d10,#0f1318)}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:980px;margin:0 auto;padding:28px 20px 60px}
-    header{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px}
-    h1{margin:0;font-size:clamp(24px,2.6vw,34px)}
-    .tagline{color:var(--muted);font-size:14px}
-    .pill{background:var(--card);border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;color:var(--muted);margin-left:6px}
-    main{display:grid;gap:22px;margin-top:24px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-    .card h2{margin:6px 0 8px;font-size:clamp(18px,2.2vw,22px)}
-    .meta{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 12px}
-    .badge{font-size:11px;padding:6px 8px;border-radius:6px;background:#0e1216;border:1px solid var(--line);color:var(--muted)}
-    .grid{display:grid;gap:12px;grid-template-columns:1fr}
-    @media(min-width:780px){.grid{grid-template-columns:repeat(2,1fr)}}
-    .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:#0e1216;color:var(--fg);font-size:13px}
-    .btn:hover{background:#0f151b}
-    .small{font-size:12px;color:var(--muted)}
+    :root {
+      --bg:#0b0d10; --fg:#e8eef3; --muted:#a6b3be;
+      --accent:#5cc8ff; --card:#12161b; --line:#1f2630;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--fg);
+      background:linear-gradient(180deg,#0b0d10,#0f1318);
+    }
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px 60px;}
+    header{
+      display:flex;flex-wrap:wrap;gap:14px;
+      align-items:flex-end;justify-content:space-between;
+      border-bottom:1px solid var(--line);padding-bottom:16px;
+    }
+    h1{margin:0;font-size:clamp(24px,2.6vw,34px);}
+    .tagline{color:var(--muted);font-size:14px;}
+    .pill{
+      background:var(--card);border:1px solid var(--line);
+      padding:6px 10px;border-radius:999px;
+      font-size:12px;color:var(--muted);margin-left:6px;
+    }
+    main{display:grid;gap:22px;margin-top:24px;}
+    .card{
+      background:var(--card);border:1px solid var(--line);
+      border-radius:16px;padding:18px;
+    }
+    .card h2{margin:6px 0 8px;font-size:clamp(18px,2.2vw,22px);}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 12px;}
+    .badge{
+      font-size:11px;padding:6px 8px;border-radius:6px;
+      background:#0e1216;border:1px solid var(--line);color:var(--muted);
+    }
+    .grid{display:grid;gap:12px;grid-template-columns:1fr;}
+    @media(min-width:780px){.grid{grid-template-columns:repeat(2,1fr);}}
+    .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
+    .btn{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:9px 12px;border-radius:10px;
+      border:1px solid var(--line);
+      background:#0e1216;color:var(--fg);font-size:13px;
+    }
+    .btn:hover{background:#0f151b;}
+    .small{font-size:12px;color:var(--muted);}
   </style>
 </head>
 <body>
@@ -33,20 +60,31 @@
     <header>
       <div>
         <h1>Kanon Tsuru — Verification Portfolio</h1>
-         <div class="tagline">Artifacts not adjectives · UVM · SVA · Coverage · NASA-style traceability</div>
-            <div class="tagline">
-      Location: Bay Area, CA · Citizenship: US · Email: <a href="mailto:you@example.com">you@example.com</a>
-    </div>
-       </div>
+
+        <div class="tagline">
+          Artifacts not adjectives · UVM · SVA · Coverage · NASA-style traceability
+        </div>
+
+        <div class="tagline">
+          Location: Bay Area, CA · Citizenship: US ·
+          Email: <a href="mailto:you@example.com">you@example.com</a>
+        </div>
+      </div>
+
       <div>
-        <span class="pill"><a href="https://github.com/kanontsuru">GitHub @kanontsuru</a></span>
+        <span class="pill">
+          <a href="https://github.com/kanontsuru" target="_blank">GitHub @kanontsuru</a>
+        </span>
       </div>
     </header>
 
     <main>
       <section class="card">
         <h2>Overview</h2>
-        <p class="small">Three projects show methodology (UVM), reliability (TMR/SEU), and performance (Cache/Queue). Each links to its repository and artifacts (VPlan, RTM, Coverage, SVA/SEU report).</p>
+        <p class="small">
+          Three projects show methodology (UVM), reliability (TMR/SEU), and performance (Cache/Queue).
+          Each links to its repository and artifacts (VPlan, RTM, Coverage, SVA/SEU report).
+        </p>
         <ul class="small">
           <li><b>AXI-Lite UVM:</b> methodology demo — scoreboard + SVA + coverage + CI</li>
           <li><b>SEU/TMR Demo:</b> fault-tolerance testing with bit flips and voter checks</li>
@@ -55,10 +93,18 @@
       </section>
 
       <section class="grid">
+        <!-- Project 1 -->
         <article class="card">
           <h2>AXI-Lite Register Block — UVM Environment</h2>
-          <div class="meta"><span class="badge">UVM 1.2</span><span class="badge">SVA</span><span class="badge">Coverage</span></div>
-          <p class="small">Driver/monitor/seqr/seq · scoreboard · negative tests. Artifacts: VPlan, RTM, Coverage, SVAs, CI logs.</p>
+          <div class="meta">
+            <span class="badge">UVM 1.2</span>
+            <span class="badge">SVA</span>
+            <span class="badge">Coverage</span>
+          </div>
+          <p class="small">
+            Driver / monitor / seqr / seq · scoreboard · negative tests.
+            Artifacts: VPlan, RTM, Coverage, SVAs, CI logs.
+          </p>
           <div class="links">
             <a class="btn" href="https://github.com/kanontsuru/axi-lite-uvm" target="_blank">Repo</a>
             <a class="btn" href="#" target="_blank">VPlan (PDF)</a>
@@ -67,10 +113,17 @@
           </div>
         </article>
 
+        <!-- Project 2 -->
         <article class="card">
           <h2>SEU/TMR Fault-Tolerance Demo</h2>
-          <div class="meta"><span class="badge">TMR</span><span class="badge">SEU Injector</span><span class="badge">SVA Proofs</span></div>
-          <p class="small">Triple-modular redundancy voter + ECC check · fault injection and campaign report.</p>
+          <div class="meta">
+            <span class="badge">TMR</span>
+            <span class="badge">SEU Injector</span>
+            <span class="badge">SVA Proofs</span>
+          </div>
+          <p class="small">
+            Triple-modular-redundancy voter + ECC check · fault injection and campaign report.
+          </p>
           <div class="links">
             <a class="btn" href="https://github.com/kanontsuru/seu-tmr-demo" target="_blank">Repo</a>
             <a class="btn" href="#" target="_blank">Campaign Report (PDF)</a>
@@ -78,10 +131,17 @@
           </div>
         </article>
 
+        <!-- Project 3 -->
         <article class="card">
           <h2>Cache-Slice / Queue — UVM Environment</h2>
-          <div class="meta"><span class="badge">Constrained-Random</span><span class="badge">Scoreboard</span><span class="badge">Perf Counters</span></div>
-          <p class="small">Parameterized queue/cache slice with latency + hit-rate stats and closure journal.</p>
+          <div class="meta">
+            <span class="badge">Constrained-Random</span>
+            <span class="badge">Scoreboard</span>
+            <span class="badge">Perf Counters</span>
+          </div>
+          <p class="small">
+            Parameterized queue / cache slice with latency + hit-rate stats and closure journal.
+          </p>
           <div class="links">
             <a class="btn" href="https://github.com/kanontsuru/cache-slice-uvm" target="_blank">Repo</a>
             <a class="btn" href="#" target="_blank">Coverage (HTML)</a>
@@ -94,12 +154,14 @@
         <h2>How to Reproduce</h2>
         <ol class="small">
           <li>Each repo contains <code>/artifacts/</code> with PDF/HTML outputs.</li>
-          <li>Top README → 3-minute walkthrough + CI badge · tag releases as <code>vYYYY.MM.DD</code>.</li>
+          <li>
+            Top README → 3-minute walkthrough + CI badge · tag releases as <code>vYYYY.MM.DD</code>.
+          </li>
         </ol>
       </section>
     </main>
 
-    <footer class="small" style="text-align:center;margin-top:20px;color:#a6b3be">
+    <footer class="small" style="text-align:center;margin-top:20px;color:#a6b3be;">
       © <span id="y"></span> Kanon Tsuru · “Artifacts, not adjectives.”
     </footer>
   </div>
