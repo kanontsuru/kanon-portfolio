@@ -25,7 +25,13 @@
       border-bottom:1px solid var(--line);padding-bottom:16px;
     }
     h1{margin:0;font-size:clamp(24px,2.6vw,34px);}
-    .tagline{color:var(--muted);font-size:14px;}
+    .tagline{color:var(--muted);font-size:14px;margin-top:6px;}
+    .info{
+      margin-top:10px;color:var(--muted);
+      font-size:14px;display:flex;flex-wrap:wrap;
+      gap:10px 28px;line-height:1.6;
+    }
+    .info-item{white-space:nowrap;}
     .pill{
       background:var(--card);border:1px solid var(--line);
       padding:6px 10px;border-radius:999px;
@@ -60,14 +66,14 @@
     <header>
       <div>
         <h1>Kanon Tsuru — Verification Portfolio</h1>
-
         <div class="tagline">
           Artifacts not adjectives · UVM · SVA · Coverage · NASA-style traceability
         </div>
 
-        <div class="tagline">
-          Location: Bay Area, CA · Citizenship: US ·
-          Email: <a href="mailto:you@example.com">you@example.com</a>
+        <div class="info">
+          <span class="info-item">Location: Bay Area, CA</span>
+          <span class="info-item">Citizenship: US</span>
+          <span class="info-item">Email: <a href="mailto:kanon.tsuru@gmx.us">kanon.tsuru@gmx.us</a></span>
         </div>
       </div>
 
@@ -93,7 +99,6 @@
       </section>
 
       <section class="grid">
-        <!-- Project 1 -->
         <article class="card">
           <h2>AXI-Lite Register Block — UVM Environment</h2>
           <div class="meta">
@@ -113,7 +118,6 @@
           </div>
         </article>
 
-        <!-- Project 2 -->
         <article class="card">
           <h2>SEU/TMR Fault-Tolerance Demo</h2>
           <div class="meta">
@@ -131,7 +135,6 @@
           </div>
         </article>
 
-        <!-- Project 3 -->
         <article class="card">
           <h2>Cache-Slice / Queue — UVM Environment</h2>
           <div class="meta">
@@ -154,9 +157,7 @@
         <h2>How to Reproduce</h2>
         <ol class="small">
           <li>Each repo contains <code>/artifacts/</code> with PDF/HTML outputs.</li>
-          <li>
-            Top README → 3-minute walkthrough + CI badge · tag releases as <code>vYYYY.MM.DD</code>.
-          </li>
+          <li>Top README → 3-minute walkthrough + CI badge · tag releases as <code>vYYYY.MM.DD</code>.</li>
         </ol>
       </section>
     </main>
@@ -165,6 +166,8 @@
       © <span id="y"></span> Kanon Tsuru · “Artifacts, not adjectives.”
     </footer>
   </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
